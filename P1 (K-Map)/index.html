@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Ellipse 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>K-Map Generator</title>
+
+</head>
+
+<body>
+    <div class="main_class">
+        <div class="container">
+            <div class="truth_tbl">
+                <table class="ttbl">
+                    <tr id="head">
+                        <td id="tt_col" style=" justify-content: center; padding: 20px;">A</td>
+                        <td id="tt_col" style=" justify-content: center; padding: 20px;">B</td>
+                        <td id="tt_col" style=" justify-content: center; padding: 20px;">C</td>
+                        <td id="tt_col" style=" justify-content: center; padding: 20px;">D</td>
+                        <td id="tt_col" style=" justify-content: center; padding: 20px;">Output</td>
+                    </tr>
+                    <tr class="data" id="data0">
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_1" onclick="ttbut0()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data1">
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_2" onclick="ttbut1()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data2">
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_3" onclick="ttbut2()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data3">
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_4" onclick="ttbut3()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data4">
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_5" onclick="ttbut4()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data5">
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_6" onclick="ttbut5()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data6">
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_7" onclick="ttbut6()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data7">
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_8" onclick="ttbut7()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data8">
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_9" onclick="ttbut8()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data9">
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_10" onclick="ttbut9()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data10">
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_11" onclick="ttbut10()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data11">
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_12" onclick="ttbut11()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data12">
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_13" onclick="ttbut12()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data13">
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_14" onclick="ttbut13()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data14">
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">0</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_15" onclick="ttbut14()">0</button></td>
+                    </tr>
+                    <tr class="data" id="data15">
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="other_data">1</td>
+                        <td id="ttbutton"><button class="mybut" id="tt_but_16" onclick="ttbut15()">0</button></td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+
+            <button class="reset" role="button" onclick="resett()">Reset</button>
+
+            <div class="k-map">
+                <table id="kmap_tbl_parent">
+                    <tr id="first">
+                        <td style="background-color: rgba(0, 0, 0, 0.26);">AB/CD</td>
+                        <td id="k_col">00</td>
+                        <td id="k_col">01</td>
+                        <td id="k_col">11</td>
+                        <td id="k_col">10</td>
+                    </tr>
+                    <tr id="kmap_tbl">
+                        <td id="k_row">00</td>
+                        <td class="kmbutton" id="kmbutton0"><button class="k_but" id="kmbut_0" onclick="kmap0()">0</button></td>
+                        <td class="kmbutton" id="kmbutton1"><button class="k_but" id="kmbut_1" onclick="kmap1()">0</button></td>
+                        <td class="kmbutton" id="kmbutton3"><button class="k_but" id="kmbut_3" onclick="kmap3()">0</button></td>
+                        <td class="kmbutton" id="kmbutton2"><button class="k_but" id="kmbut_2" onclick="kmap2()">0</button></td>
+                    </tr>
+                    <tr id="kmap_tbl">
+                        <td id="k_row">01</td>
+                        <td class="kmbutton"  id="kmbutton4"><button class="k_but" id="kmbut_4" onclick="kmap4()">0</button></td>
+                        <td class="kmbutton"  id="kmbutton5"><button class="k_but" id="kmbut_5" onclick="kmap5()">0</button></td>
+                        <td class="kmbutton"  id="kmbutton7"><button class="k_but" id="kmbut_7" onclick="kmap7()">0</button></td>
+                        <td class="kmbutton"  id="kmbutton6"><button class="k_but" id="kmbut_6" onclick="kmap6()">0</button></td>
+                    </tr>
+                    <tr id="kmap_tbl">
+                        <td id="k_row">11</td>
+                        <td class="kmbutton" id="kmbutton12"><button class="k_but" id="kmbut_12" onclick="kmap12()">0</button></td>
+                        <td class="kmbutton" id="kmbutton13"><button class="k_but" id="kmbut_13" onclick="kmap13()">0</button></td>
+                        <td class="kmbutton" id="kmbutton15"><button class="k_but" id="kmbut_15" onclick="kmap15()">0</button></td>
+                        <td class="kmbutton" id="kmbutton14"><button class="k_but" id="kmbut_14" onclick="kmap14()">0</button></td>
+                    </tr>
+                    <tr id="kmap_tbl">
+                        <td id="k_row">10</td>
+                        <td class="kmbutton" id="kmbutton8"><button class="k_but" id="kmbut_8" onclick="kmap8()">0</button></td>
+                        <td class="kmbutton" id="kmbutton9"><button class="k_but" id="kmbut_9" onclick="kmap9()">0</button></td>
+                        <td class="kmbutton" id="kmbutton11"><button class="k_but" id="kmbut_11" onclick="kmap11()">0</button></td>
+                        <td class="kmbutton" id="kmbutton10"><button class="k_but" id="kmbut_10" onclick="kmap10()">0</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("/sl1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Verdana', sans-serif;
+    background-color: rgb(5, 5, 66);
+    color: rgb(223, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem;
+}
+
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+
+#tt_col {
+    background: rgba(9, 46, 24, 0.432);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: white;
+
+}
+
+
+/* Truth Table */
+.ttbl {
+    background: rgba(53, 70, 63, 0.308);
+
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 2px solid rgb(71, 83, 80);
+    border-radius: 5px;
+}
+
+#k_row {
+    background: rgba(9, 46, 24, 0.342);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: white;
+}
+
+#k_col {
+    background: rgba(9, 46, 24, 0.342);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: white;
+
+}
+
+.ttbl td {
+    border: 1px solid rgb(71, 83, 80);
+    padding: 15px;
+    width: 60px;
+    height: 40px;
+}
+
+.ttbl th {
+    background-color: rgb(71, 83, 80);
+    font-weight: bold;
+    padding: 15px;
+}
+
+.mybut {
+    font-size: 1rem;
+    color: white;
+    background: rgba(111, 179, 141, 0.432);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+
+
+
+/* K-Map Table */
+
+
+
+
+#kmap_tbl_parent {
+    background: rgba(111, 179, 141, 0.432);
+
+    /* background: rgba(215, 239, 245, 0.418); */
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 2px solid rgb(71, 83, 80);
+    border-radius: 5px;
+}
+
+#kmap_tbl_parent td {
+    border: 1px solid rgb(71, 83, 80);
+    padding: 20px;
+    width: 60px;
+    height: 40px;
+}
+
+#kmap_tbl_parent .kmap-header {
+    background-color: rgb(71, 83, 80);
+    font-weight: bold;
+}
+
+.k_but {
+    font-size: 1rem;
+    color: white;
+    background: rgba(111, 179, 141, 0.432);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#tt_col {
+
+
+    background: rgba(31, 31, 31, 0.74);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    color: white;
+}
+
+
+.reset {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(24, 49, 39);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter;
+    font-weight: 700;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.reset:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
