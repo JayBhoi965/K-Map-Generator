@@ -1,3 +1,6 @@
+// Taking all the Elements of HTML in our Brain(JS)
+
+
 let tt0 = document.getElementById("tt_but_1");
 let tt1 = document.getElementById("tt_but_2");
 let tt2 = document.getElementById("tt_but_3");
@@ -70,6 +73,8 @@ let km_style14 = document.getElementById("kmbutton14")
 let km_style15 = document.getElementById("kmbutton15")
 
 
+
+// K-map Modification when the Truth table's any Column got Hited 
 
 
 function ttbut0() {
@@ -328,6 +333,7 @@ function ttbut15() {
 
 
 // ...................... K-Map ......................
+// Truth Table Modification when the K-map's any Column got Hited 
 
 
 function kmap0() {
