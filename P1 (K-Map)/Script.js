@@ -89,7 +89,7 @@ function ttbut0() {
         km0.innerHTML = '0';
         km_style0.style.cssText = 'background-color : none';
         tt_style0.style.cssText = 'background-color : none';
-
+	 	
     }
 }
 function ttbut1() {
